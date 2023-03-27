@@ -1,5 +1,5 @@
-﻿using Arrays_Hashing.ValidAnagram;
+﻿using Arrays_Hashing.TwoSum;
 
-var isAnagram = ValidAnagramProblem.IsAnagram("anagram", "nagaram");
+var indexes = TwoSumProblem.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
 
 Console.ReadLine();
