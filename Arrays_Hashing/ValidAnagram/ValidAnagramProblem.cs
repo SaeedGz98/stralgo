@@ -8,28 +8,23 @@ namespace Arrays_Hashing.ValidAnagram
         {
             if (s.Length != t.Length) return false;
 
-            s = string.Concat(s.OrderBy(s => s));
-            t = string.Concat(t.OrderBy(t => t));
+            Dictionary<char, int> hashS = new(), hashT = new();
 
-            return s.Equals(t);
+            for (int i = 0; i < s.Length; i++)
+            {
+                hashS[s[i]] = hashS.GetValueOrDefault(s[i], 0) + 1;
+                hashT[t[i]] = hashT.GetValueOrDefault(t[i], 0) + 1;
+            }
 
-            //Dictionary<char, int> hashS = new(), hashT = new();
+            foreach (var hs in hashS)
+            {
+                if (hs.Value != hashT.GetValueOrDefault(hs.Key, 0))
+                {
+                    return false;
+                }
+            }
 
-            //for (int i = 0; i < s.Length; i++)
-            //{
-            //    hashS[s[i]] = hashS.GetValueOrDefault(s[i], 0) + 1;
-            //    hashT[t[i]] = hashT.GetValueOrDefault(t[i], 0) + 1;
-            //}
-
-            //foreach (var hs in hashS)
-            //{
-            //    if (hs.Value != hashT.GetValueOrDefault(hs.Key, 0))
-            //    {
-            //        return false;
-            //    }
-            //}
-
-            //return true;
+            return true;
         }
     }
 }
