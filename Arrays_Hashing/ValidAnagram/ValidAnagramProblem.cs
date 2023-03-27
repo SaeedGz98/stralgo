@@ -8,6 +8,7 @@ namespace Arrays_Hashing.ValidAnagram
         {
             if (s.Length != t.Length) return false;
 
+
             Dictionary<char, int> hashS = new(), hashT = new();
 
             for (int i = 0; i < s.Length; i++)
