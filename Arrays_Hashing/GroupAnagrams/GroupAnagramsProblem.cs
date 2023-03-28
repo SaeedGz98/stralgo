@@ -4,24 +4,28 @@
     {
         public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
-            Dictionary<string, string[]> anagramHash = new();
-            string sortedStr;
-            foreach (var str in strs)
-            {
-                sortedStr = string.Concat(str.OrderBy(x => x));
+            Dictionary<string, List<string>> dict = new();
 
-                if (anagramHash.ContainsKey(sortedStr))
+            foreach (string str in strs)
+            {
+                char[] chars = str.ToCharArray();
+                Array.Sort(chars);
+                string key = new string(chars);
+
+                if (!dict.ContainsKey(key))
                 {
-                    anagramHash[sortedStr] =
-                        anagramHash[sortedStr].Append(str).ToArray();
+                    dict[key] = new List<string>();
                 }
-                else
-                {
-                    anagramHash.Add(sortedStr, new string[] { str });
-                }
+                dict[key].Add(str);
             }
 
-            return anagramHash.Select(x => x.Value.ToArray()).ToArray();
+            IList<IList<string>> result = new List<IList<string>>();
+            foreach (List<string> list in dict.Values)
+            {
+                result.Add(list);
+            }
+
+            return result;
         }
     }
 }
