@@ -7,10 +7,17 @@
             int[] res = Enumerable.Repeat(0, temperatures.Length).ToArray();
             Stack<(int value, int index)> stack = new();
 
-            foreach (int temp in temperatures)
+            for (int i = 0; i < temperatures.Length; i++)
             {
-                while (stack.Count != 0 && stack.Peek)
+                while (stack.Count > 0 && stack.Peek().value < temperatures[i])
+                {
+                    int poppedIndex = stack.Pop().index;
+                    res[poppedIndex] = i - poppedIndex;
+                }
+                stack.Push((temperatures[i], i));
             }
+
+            return res;
         }
     }
 }
