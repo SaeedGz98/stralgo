@@ -5,34 +5,25 @@
         public static bool IsValid(string s)
         {
             Stack<char> chars = new();
+            Dictionary<char, char> closeToOpen = new() {
+                { ')','(' },
+                { ']','[' },
+                { '}','{' }
+            };
 
             foreach (var character in s)
             {
-                if (!chars.Any())
+                if (closeToOpen.ContainsKey(character))
+                {
+                    if (chars.Any() && chars.Peek() == closeToOpen[character])
+                        chars.Pop();
+                    else
+                        return false;
+                }
+                else
                 {
                     chars.Push(character);
-                    continue;
                 }
-
-                if (chars.Peek() == '(' && character == ')')
-                {
-                    chars.Pop();
-                    continue;
-                }
-
-                if (chars.Peek() == '{' && character == '}')
-                {
-                    chars.Pop();
-                    continue;
-                }
-
-                if (chars.Peek() == '[' && character == ']')
-                {
-                    chars.Pop();
-                    continue;
-                }
-
-                chars.Push(character);
             }
 
             return !chars.Any();
