@@ -17,7 +17,7 @@
                 int secondNum = stack.Pop();
                 int firstNum = stack.Pop();
 
-                int newAppende = token[0] switch
+                int result = token[0] switch
                 {
                     '+' => firstNum + secondNum,
                     '-' => firstNum - secondNum,
@@ -25,7 +25,7 @@
                     '/' => firstNum / secondNum
                 };
 
-                stack.Push(newAppende);
+                stack.Push(result);
             }
 
             return stack.Pop();
