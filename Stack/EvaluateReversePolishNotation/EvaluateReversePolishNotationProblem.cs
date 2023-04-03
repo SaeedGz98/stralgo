@@ -14,16 +14,28 @@
                     continue;
                 }
 
-                int secondNum = stack.Pop();
-                int firstNum = stack.Pop();
+                int result = default;
 
-                int result = token[0] switch
+                if (token[0] == '+')
                 {
-                    '+' => firstNum + secondNum,
-                    '-' => firstNum - secondNum,
-                    '*' => firstNum * secondNum,
-                    '/' => firstNum / secondNum
-                };
+                    result = stack.Pop() + stack.Pop();
+                }
+                else if (token[0] == '-')
+                {
+                    int secondNum = stack.Pop();
+                    int firstNum = stack.Pop();
+                    result = firstNum - secondNum;
+                }
+                else if (token[0] == '*')
+                {
+                    result = stack.Pop() * stack.Pop();
+                }
+                else if (token[0] == '/')
+                {
+                    int secondNum = stack.Pop();
+                    int firstNum = stack.Pop();
+                    result = firstNum / secondNum;
+                }
 
                 stack.Push(result);
             }
