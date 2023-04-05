@@ -1,3 +1,3 @@
-﻿using TwoPointers.ValidPalindrome;
+﻿using TwoPointers.TwoSumII;
 
-ValidPalindromeProblem.IsPalindrome("A man, a plan, a canal: Panama");
+TwoSumIIProblem.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
