@@ -1,4 +1,4 @@
-﻿using Stack.DailyTemperatures;
+﻿using Stack.LargestRectangleInHistogram;
 
-var result = DailyTemperaturesProblem.DailyTemperatures(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 });
+var result = LargestRectangleInHistogramProblem.LargestRectangleArea(new int[] { 2, 1, 5, 6, 2, 3 });
 Console.WriteLine(result);
