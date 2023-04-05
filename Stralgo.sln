@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stralgo.DoublyLinkedList", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays_Hashing", "Arrays_Hashing\Arrays_Hashing.csproj", "{B851ED07-1E97-4F14-A69E-572BFB27DF99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{13896CCF-EB88-4240-B453-74073B87ACB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj", "{13896CCF-EB88-4240-B453-74073B87ACB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPointers", "TwoPointers\TwoPointers.csproj", "{660104D1-B7CC-4F81-AC40-BA1F2CE94629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{13896CCF-EB88-4240-B453-74073B87ACB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13896CCF-EB88-4240-B453-74073B87ACB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13896CCF-EB88-4240-B453-74073B87ACB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660104D1-B7CC-4F81-AC40-BA1F2CE94629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660104D1-B7CC-4F81-AC40-BA1F2CE94629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660104D1-B7CC-4F81-AC40-BA1F2CE94629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660104D1-B7CC-4F81-AC40-BA1F2CE94629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
