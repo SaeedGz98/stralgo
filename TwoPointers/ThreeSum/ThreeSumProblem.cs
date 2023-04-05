@@ -30,7 +30,9 @@ namespace TwoPointers.ThreeSum
                     else
                     {
                         res.Add(new List<int> { span[i], span[left], span[right] });
+
                         left++;
+
                         while (span[left] == span[left - 1] && left < right)
                             left++;
                     }
