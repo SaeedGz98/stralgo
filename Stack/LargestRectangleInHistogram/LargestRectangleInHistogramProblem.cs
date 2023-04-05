@@ -4,10 +4,11 @@
     {
         public static int LargestRectangleArea(int[] heights)
         {
-            Stack<(int index, int height)> stack = new();
             int maxArea = 0;
+            int count = heights.Length;
+            Stack<(int index, int height)> stack = new(count);
 
-            for (int i = 0; i < heights.Length; i++)
+            for (int i = 0; i < count; i++)
             {
                 int start = i;
 
@@ -22,7 +23,7 @@
             }
 
             foreach (var remainingItems in stack)
-                maxArea = Math.Max(maxArea, remainingItems.height * (heights.Count() - remainingItems.index));
+                maxArea = Math.Max(maxArea, remainingItems.height * (count - remainingItems.index));
 
             return maxArea;
         }
