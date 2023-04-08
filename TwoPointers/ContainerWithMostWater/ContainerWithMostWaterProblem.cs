@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace TwoPointers.ContainerWithMostWater
 {
@@ -7,18 +6,23 @@ namespace TwoPointers.ContainerWithMostWater
     {
         public static int MaxArea(int[] height)
         {
-            int maxArea = 0;
-            ReadOnlySpan<int> span = height.AsSpan();
+            int maxArea = default;
+            int leftHeight;
+            int rightHeight;
 
-            for (int i = 0; i < span.Length; i++)
+            int left = 0, right = height.Length - 1;
+
+            while (left != right)
             {
-                int right = span.Length - 1;
+                leftHeight = height[left];
+                rightHeight = height[right];
 
-                while (i < right)
-                {
-                    maxArea = Math.Max(maxArea, Math.Min(span[i], span[right]) * (right - i));
+                maxArea = Math.Max(maxArea, Math.Min(leftHeight, rightHeight) * (right - left));
+
+                if (leftHeight < rightHeight)
+                    left++;
+                else
                     right--;
-                }
             }
 
             return maxArea;
