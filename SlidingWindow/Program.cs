@@ -1,4 +1,3 @@
-﻿using SlidingWindow.LongestRepeatingCharacterReplacement;
-using SlidingWindow.TimeToBuySellStock;
+﻿using SlidingWindow.PermutationInString;
 
-LongestRepeatingCharacterReplacementProblem.CharacterReplacement("AABABBA", 1);
+PermutationInStringProblem.CheckInclusion("ab", "eidbaooo");
