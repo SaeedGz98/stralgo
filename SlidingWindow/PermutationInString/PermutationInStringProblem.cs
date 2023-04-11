@@ -25,7 +25,7 @@ namespace SlidingWindow.PermutationInString
 
             int left = 0;
 
-            foreach (int right in Enumerable.Range(s1.Length, s2.Length - s1.Length))
+            for (int right = s1.Length; right < s2.Length; right++)
             {
                 if (matches == 26)
                     return true;
