@@ -1,25 +1,24 @@
-﻿using System;
-using System.Linq;
-
-namespace SlidingWindow.PermutationInString
+﻿namespace SlidingWindow.PermutationInString
 {
     public static class PermutationInStringProblem
     {
         public static bool CheckInclusion(string s1, string s2)
         {
-            char[] charArray = s2.ToCharArray();
-            Array.Sort(charArray);
-            s2 = new string(charArray);
-            int len = s1.Length;
+            //create array with 0 * 26 index for s1 and s2
 
-            for (int left = 0; left + len < s2.Length; left++)
-            {
-                var charPart = s2.Substring(left, len).ToCharArray();
-                Array.Sort(charPart);
+            //fill this array by iterate on all over element of s1 and s2
 
-                if (new string(charPart).Contains(s2))
-                    return true;
-            }
+            //define matches
+
+            //compare two arrays and add matches value by one if find same value for each index
+
+            //define left from 0
+
+            //loop throgh s2 indexes from s1 length and s2 length for right indexes
+
+            ////modify matches for shift right right operation
+            ///
+            ////modify matches for shift right left operation
 
             return false;
         }
