@@ -1,3 +1,3 @@
-﻿using SlidingWindow.PermutationInString;
+﻿using SlidingWindow.MinimumWindowSubstring;
 
-PermutationInStringProblem.CheckInclusion("ab", "eidbaooo");
+MinimumWindowSubstringProblem.MinWindow("ADOBECODEBANC", "ABC");
