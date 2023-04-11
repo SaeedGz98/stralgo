@@ -1,26 +1,57 @@
-﻿namespace SlidingWindow.PermutationInString
+﻿using System.Linq;
+
+namespace SlidingWindow.PermutationInString
 {
     public static class PermutationInStringProblem
     {
         public static bool CheckInclusion(string s1, string s2)
         {
-            //create array with 0 * 26 index for s1 and s2
+            if (s1.Length > s2.Length)
+                return false;
 
-            //fill this array by iterate on all over element of s1 and s2
+            int[] s1Count = Enumerable.Repeat(0, 26).ToArray();
+            int[] s2Count = Enumerable.Repeat(0, 26).ToArray();
 
-            //define matches
+            for (int i = 0; i < s1.Length; i++)
+            {
+                s1Count[s1[i] - 'a'] += 1;
+                s2Count[s2[i] - 'a'] += 1;
+            }
 
-            //compare two arrays and add matches value by one if find same value for each index
+            int matches = 0;
 
-            //define left from 0
+            for (int i = 0; i < 26; i++)
+                matches += (s1Count[i] == s2Count[i]) ? 1 : 0;
 
-            //loop throgh s2 indexes from s1 length and s2 length for right indexes
+            int left = 0;
 
-            ////modify matches for shift right right operation
-            ///
-            ////modify matches for shift right left operation
+            foreach (int right in Enumerable.Range(s1.Length, s2.Length - s1.Length))
+            {
+                if (matches == 26)
+                    return true;
 
-            return false;
+                int index = s2[right] - 'a';
+
+                s2Count[index]++;
+
+                if (s1Count[index] == s2Count[index])
+                    matches++;
+                else if (s2Count[index] - 1 == s1Count[index])
+                    matches--;
+
+                index = s2[left] - 'a';
+
+                s2Count[index]--;
+
+                if (s1Count[index] == s2Count[index])
+                    matches++;
+                else if (s2Count[index] + 1 == s1Count[index])
+                    matches--;
+
+                left++;
+            }
+
+            return matches == 26;
         }
     }
 }
