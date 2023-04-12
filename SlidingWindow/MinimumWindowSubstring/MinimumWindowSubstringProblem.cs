@@ -6,7 +6,7 @@ namespace SlidingWindow.MinimumWindowSubstring
     {
         public static string MinWindow(string s, string t)
         {
-            if (t == string.Empty)
+            if (t == string.Empty || t.Length > s.Length)
                 return string.Empty;
 
             Dictionary<char, int> countT = new();
@@ -46,9 +46,7 @@ namespace SlidingWindow.MinimumWindowSubstring
                 }
             }
 
-            string result = s[res.left..(res.right + 1)];
-
-            return result;
+            return resLen != int.MaxValue ? s[res.left..(res.right + 1)] : string.Empty;
         }
     }
 }
