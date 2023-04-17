@@ -45,34 +45,39 @@ namespace LinkedList.ReorderList
             {
                 ListNode tmp1 = first.next, tmp2 = second.next;
 
+                Console.WriteLine("ListNode tmp1 = first.next, tmp2 = second.next;");
                 Console.WriteLine($"tmp1: {tmp1}");
                 Console.WriteLine($"tmp2: {tmp2}");
                 Console.WriteLine($"head: {head}");
-
+                Console.WriteLine();
 
                 first.next = second;
 
+                Console.WriteLine("first.next = second;");
                 Console.WriteLine($"first: {first}");
                 Console.WriteLine($"head: {head}");
-
+                Console.WriteLine();
 
                 second.next = tmp1;
 
+                Console.WriteLine("second.next = tmp1;");
                 Console.WriteLine($"second: {second}");
                 Console.WriteLine($"head: {head}");
-
+                Console.WriteLine();
 
                 first = tmp1;
 
+                Console.WriteLine("first = tmp1;");
                 Console.WriteLine($"first: {first}");
                 Console.WriteLine($"head: {head}");
-
+                Console.WriteLine();
 
                 second = tmp2;
 
+                Console.WriteLine("second = tmp2;");
                 Console.WriteLine($"second: {second}");
                 Console.WriteLine($"head: {head}");
-
+                Console.WriteLine();
 
                 Console.WriteLine("-------------------");
             }
