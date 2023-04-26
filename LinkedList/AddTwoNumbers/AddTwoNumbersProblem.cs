@@ -5,22 +5,25 @@
         public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
             ListNode dummy = new ListNode();
-            ListNode tail = dummy;
+            ListNode cur = dummy;
 
-            int remain = 0;
+            int carry = 0;
 
-            while (l1.next != null && l2.next != null)
+            while (l1 != null || l2 != null || carry > 0)
             {
-                int sum = remain + l1.val + l2.val;
-                remain = sum % 10;
+                int v1 = l1 != null ? l1.val : 0;
+                int v2 = l2 != null ? l2.val : 0;
 
-                tail.next = new(remain);
+                int sum = carry + v1 + v2;
+                carry = sum / 10;
+                cur.next = new(sum % 10);
 
-                l1 = l1.next;
-                l2 = l2.next;
+                cur = cur.next;
+                l1 = l1 != null ? l1.next : null;
+                l2 = l2 != null ? l2.next : null;
             }
 
-            return l1;
+            return dummy.next;
         }
     }
 }

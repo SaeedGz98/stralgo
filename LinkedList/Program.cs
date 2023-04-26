@@ -1,7 +1,3 @@
-﻿using LinkedList.MergeTwoSortedLists;
-using LinkedList.RemoveNthNodeFromEndOfList;
-using LinkedList.ReorderList;
+﻿using LinkedList.AddTwoNumbers;
 
-
-
-RemoveNthNodeFromEndOfListProblem.RemoveNthFromEnd(new(1, new(2, new(3, new(4, new(5))))), 2);
+AddTwoNumbersProblem.AddTwoNumbers(new(2, new(4, new(3))), new(5, new(6, new(4))));
