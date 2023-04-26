@@ -1,3 +1,13 @@
-﻿using LinkedList.AddTwoNumbers;
+﻿using LinkedList.LinkedListCycle;
 
-AddTwoNumbersProblem.AddTwoNumbers(new(2, new(4, new(3))), new(5, new(6, new(4))));
+ListNode node1 = new(3);
+ListNode node2 = new(2);
+ListNode node3 = new(0);
+ListNode node4 = new(-4);
+
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+node4.next = node2;
+
+LinkedListCycleProblem.HasCycle(node1);
