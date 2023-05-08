@@ -7,7 +7,7 @@
             return IsValid(root, long.MinValue, long.MaxValue);
         }
 
-        public static bool IsValid(TreeNode node, int left, int right)
+        public static bool IsValid(TreeNode node, long left, long right)
         {
             if (node is null)
                 return true;
