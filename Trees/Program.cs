@@ -1,9 +1,6 @@
 ﻿using System;
-using Trees.BinaryTreeLevelOrderTraversal;
-using Trees.MaximumDepthOfBinaryTree;
-using Trees.ValidateBinarySearchTree;
+using Trees.BinaryTreeMaximumPathSum;
 
-//var isValidBst = ValidateBinarySearchTreeProblem.IsValidBST(new(2, new(1), new(3)));
-var isValidBst = ValidateBinarySearchTreeProblem.IsValidBST(new(5, new(1), new(4, new(3), new(6))));
+var maxPath = BinaryTreeMaximumPathSumProblem.MaxPathSum(new(-10, new(9), new(20, new(15), new(7))));
 
-Console.WriteLine(isValidBst);
+Console.WriteLine(maxPath);
