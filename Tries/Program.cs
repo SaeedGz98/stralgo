@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using Tries.ImplementTrie;
+
+Trie trie = new();
+
+trie.Insert("apple");
+
+trie.Insert("ape");
+
+trie.Insert("banana");
+
+trie.Insert("ban");
+
+Console.WriteLine("hi");
