@@ -1,4 +1,5 @@
-﻿using Backtracking.LetterCombinationsOfAPhoneNumber;
+﻿using Backtracking.NQueens;
 
-var result = LetterCombinationsOfAPhoneNumberProblem.LetterCombinations("23");
+var result = NQueensProblem.SolveNQueens(4);
+
 var a = 2;
