@@ -1,5 +1,4 @@
-﻿using Backtracking.SubsetsII;
-using System.Collections.Generic;
+﻿using Backtracking.LetterCombinationsOfAPhoneNumber;
 
-IList<IList<int>> result = SubsetsIIProblem.SubsetsWithDup(new int[] { 1, 2, 2, 3 });
+var result = LetterCombinationsOfAPhoneNumberProblem.LetterCombinations("23");
 var a = 2;
