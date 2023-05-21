@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tries", "Tries\Tries.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backtracking", "Backtracking\Backtracking.csproj", "{EE1F6AC9-BE4E-40CF-99FE-9A141B73FE1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap_PriorityQueue", "Heap_PriorityQueue\Heap_PriorityQueue.csproj", "{7C612FD5-AE64-4568-87FC-AECC2D8A9248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heap_PriorityQueue", "Heap_PriorityQueue\Heap_PriorityQueue.csproj", "{7C612FD5-AE64-4568-87FC-AECC2D8A9248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1D_DynamicProgramming", "1D_DynamicProgramming\1D_DynamicProgramming.csproj", "{A12BC94B-E9E7-4F86-88BE-17E05BF17B59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{7C612FD5-AE64-4568-87FC-AECC2D8A9248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C612FD5-AE64-4568-87FC-AECC2D8A9248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C612FD5-AE64-4568-87FC-AECC2D8A9248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A12BC94B-E9E7-4F86-88BE-17E05BF17B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12BC94B-E9E7-4F86-88BE-17E05BF17B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12BC94B-E9E7-4F86-88BE-17E05BF17B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12BC94B-E9E7-4F86-88BE-17E05BF17B59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
