@@ -5,7 +5,7 @@ namespace _1D_DynamicProgramming.HouseRobber
 {
     public static class HouseRobberProblem
     {
-        public int Rob(int[] nums)
+        public static int Rob(int[] nums)
         {
             int rob1 = 0, rob2 = 0;
 
