@@ -33,7 +33,7 @@
                         int row = r + dr;
                         int col = c + dc;
 
-                        if (row < 0 || col < 0 || row == rows || col == cols && grid[row][col] != 1)
+                        if (row < 0 || col < 0 || row == rows || col == cols || grid[row][col] != 1)
                             continue;
 
                         fresh--;
