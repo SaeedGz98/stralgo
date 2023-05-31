@@ -1,4 +1,5 @@
 ﻿using Graphs.RottingOranges;
+using Graphs.WordLadder;
 
-var result = RottingOrangesProblem.OrangesRotting(new int[][] { new int[] { 2, 1, 1 }, new int[] { 1, 1, 0 }, new int[] { 0, 1, 1 } });
+var result = WordLadderProblem.LadderLength("hit", "cog", new List<string>() { "hot", "dot", "dog", "lot", "log", "cog" });
 Console.WriteLine(result);
