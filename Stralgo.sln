@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heap_PriorityQueue", "Heap_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1D_DynamicProgramming", "1D_DynamicProgramming\1D_DynamicProgramming.csproj", "{A12BC94B-E9E7-4F86-88BE-17E05BF17B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{AADF716E-CE73-40DC-94D1-74B7F9F3A744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphs", "Graphs\Graphs.csproj", "{AADF716E-CE73-40DC-94D1-74B7F9F3A744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intervals", "Intervals\Intervals.csproj", "{F189ED1A-DAFE-4086-8CC2-9E0998DFF258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intervals", "Intervals\Intervals.csproj", "{F189ED1A-DAFE-4086-8CC2-9E0998DFF258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greedy", "Greedy\Greedy.csproj", "{57E5E78F-1FF1-4513-B204-48461F67AD64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{F189ED1A-DAFE-4086-8CC2-9E0998DFF258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F189ED1A-DAFE-4086-8CC2-9E0998DFF258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F189ED1A-DAFE-4086-8CC2-9E0998DFF258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
