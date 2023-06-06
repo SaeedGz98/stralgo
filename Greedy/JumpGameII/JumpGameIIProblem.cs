@@ -11,7 +11,7 @@
             {
                 int farthest = 0;
 
-                foreach (int i in Enumerable.Range(l, r))
+                for (int i = l; i < r + 1; i++)
                     farthest = Math.Max(farthest, i + nums[i]);
 
                 l = r + 1;
