@@ -1,4 +1,5 @@
-﻿using Greedy.MaximumSubarray;
+﻿using Greedy.PartitionLabels;
 
-var result = MaximumSubarrayProblem.MaxSubArray(new int[] { -2, -1, -3, -4, -1, 5, -1, -5, -4 });
+//var result = PartitionLabelsProblem.PartitionLabels("ababcbacadefegdehijhklij");
+var result = PartitionLabelsProblem.PartitionLabels("eccbbbbdec");
 Console.WriteLine(result);
