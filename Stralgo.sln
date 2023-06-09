@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphs", "Graphs\Graphs.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intervals", "Intervals\Intervals.csproj", "{F189ED1A-DAFE-4086-8CC2-9E0998DFF258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greedy", "Greedy\Greedy.csproj", "{57E5E78F-1FF1-4513-B204-48461F67AD64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greedy", "Greedy\Greedy.csproj", "{57E5E78F-1FF1-4513-B204-48461F67AD64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedGraphs", "AdvancedGraphs\AdvancedGraphs.csproj", "{5C11534A-AE83-4EDA-BFBB-6EBFCF59A025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E5E78F-1FF1-4513-B204-48461F67AD64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C11534A-AE83-4EDA-BFBB-6EBFCF59A025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C11534A-AE83-4EDA-BFBB-6EBFCF59A025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C11534A-AE83-4EDA-BFBB-6EBFCF59A025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C11534A-AE83-4EDA-BFBB-6EBFCF59A025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
