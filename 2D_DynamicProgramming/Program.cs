@@ -1,5 +1,6 @@
-﻿using _2D_DynamicProgramming.LongestCommonSubsequence;
+﻿using _2D_DynamicProgramming.InterleavingString;
+using _2D_DynamicProgramming.LongestCommonSubsequence;
 
-LongestCommonSubsequenceProblem.LongestCommonSubsequence("abcba", "abcbcba");
+InterleavingStringProblem.IsInterleave("aabcc", "dbbca", "aadbbcbcac");
 
 
