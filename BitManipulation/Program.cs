@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using BitManipulation.NumberOf1Bits;
+
+NumberOf1BitsProblem.HammingWeight(4294967293);
