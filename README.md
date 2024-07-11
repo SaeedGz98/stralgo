@@ -62,10 +62,6 @@ To get started with Stralgo, follow these steps:
 3. **Build and run**:
     Build the solution and run the desired project to see the algorithms in action.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ---
 
 Dive into the world of algorithms with Stralgo and enhance your problem-solving skills today! If you have any questions or need further assistance, feel free to open an issue or contact us.
