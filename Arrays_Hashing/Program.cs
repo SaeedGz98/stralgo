@@ -1,5 +1,5 @@
-﻿using Arrays_Hashing.LongestConsecutiveSequence;
+﻿using Arrays_Hashing.TwoSum;
 
-LongestConsecutiveSequenceProblem.LongestConsecutive(new int[] { 100, 4, 200, 1, 3, 2 });
+int[] result = TwoSumProblem.TwoSum([2, 7, 11, 15], 9);
 
 Console.ReadLine();
