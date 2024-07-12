@@ -1,5 +1,6 @@
-﻿using _1D_DynamicProgramming.CoinChange;
+﻿using _1D_DynamicProgramming.MaximumSubarray;
 using System;
 
-var result = CoinChangeProblem.CoinChange(new int[] { 1, 3, 4, 5 }, 7);
+var result = MaximumSubarrayProblem.MaxSubArray([-2, -1, -3]);
+
 Console.WriteLine(result);

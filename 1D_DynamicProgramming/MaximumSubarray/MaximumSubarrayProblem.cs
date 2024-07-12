@@ -1,5 +1,8 @@
-﻿namespace Greedy.MaximumSubarray
+﻿using System;
+
+namespace _1D_DynamicProgramming.MaximumSubarray
 {
+    /// RECOMMENDED
     public static class MaximumSubarrayProblem
     {
         public static int MaxSubArray(int[] nums)
