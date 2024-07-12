@@ -1,4 +1,6 @@
-﻿# Stralgo: A Comprehensive Algorithm Library
+![_486cb4d0-57fb-41b5-b48e-b8e809cb9830-vmake(1)](https://github.com/user-attachments/assets/b94fc7e4-20b5-4dfc-ac37-c1bcb41204e2)
+
+# Stralgo: A Comprehensive Algorithm Library
 
 Welcome to **Stralgo**, a robust and versatile library of algorithms implemented in C#. This repository is designed to help developers and enthusiasts explore and utilize a wide range of algorithms across various domains, including dynamic programming, greedy algorithms, graph theory, and more.
 
