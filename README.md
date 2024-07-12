@@ -1,4 +1,4 @@
-![_486cb4d0-57fb-41b5-b48e-b8e809cb9830-vmake(1)](https://github.com/user-attachments/assets/b94fc7e4-20b5-4dfc-ac37-c1bcb41204e2)
+![_486cb4d0-57fb-41b5-b48e-b8e809cb9830-vmake(1)-vmake](https://github.com/user-attachments/assets/0492ef5f-6706-45b8-84a3-c052e3db24b7)
 
 # Stralgo: A Comprehensive Algorithm Library
 
