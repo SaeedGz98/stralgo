@@ -1,5 +1,6 @@
 ﻿namespace Arrays_Hashing.ProductExceptSelf
 {
+    /// RECOMMENDED
     public static class ProductExceptSelfProblem
     {
         public static int[] ProductExceptSelf(int[] nums)
