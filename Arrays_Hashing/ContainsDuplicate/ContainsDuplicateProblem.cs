@@ -1,5 +1,6 @@
 ﻿namespace Arrays_Hashing.ContainsDuplicate
 {
+    /// RECOMMENDED
     public static class ContainsDuplicateProblem
     {
         public static bool ContainsDuplicate(int[] nums)
