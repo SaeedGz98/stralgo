@@ -2,6 +2,7 @@
 {
     public static class SearchInRotatedSortedArrayProblem
     {
+        /// RECOMMENDED
         public static int Search(int[] nums, int target)
         {
             int left = 0, right = nums.Length - 1;
@@ -13,19 +14,25 @@
                 if (nums[middle] == target)
                     return middle;
 
+                //left sorted
                 if (nums[left] <= nums[middle])
                 {
-                    if (target > nums[middle] || target < nums[left])
-                        left = middle + 1;
-                    else
+                    //search left
+                    if (target >= nums[left] && target <= nums[middle])
                         right = middle - 1;
+                    //search right
+                    else
+                        left = middle + 1;
                 }
+                //right sorted
                 else
                 {
-                    if (target < nums[middle] || target > nums[right])
-                        right = middle - 1;
-                    else
+                    //search right
+                    if (target >= nums[middle] && target <= nums[right])
                         left = middle + 1;
+                    //search left
+                    else
+                        right = middle - 1;
                 }
             }
 

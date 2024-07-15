@@ -1,4 +1,6 @@
 ﻿using BinarySearch.Search2DMatrix;
+using BinarySearch.SearchInRotatedSortedArray;
 using System.Text;
 
-Search2DMatrixProblem.SearchMatrix(new int[][] { new int[] { 1, 3, 5, 7 }, new int[] { 10, 11, 16, 20 }, new int[] { 23, 30, 34, 60 } }, 16);
+var result = SearchInRotatedSortedArrayProblem.Search([4, 5, 6, 7, 0, 1, 2],0);
+var a = 2;
