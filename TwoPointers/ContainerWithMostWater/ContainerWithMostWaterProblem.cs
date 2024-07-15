@@ -2,6 +2,7 @@
 
 namespace TwoPointers.ContainerWithMostWater
 {
+    /// RECOMMENDED
     public static class ContainerWithMostWaterProblem
     {
         public static int MaxArea(int[] height)
