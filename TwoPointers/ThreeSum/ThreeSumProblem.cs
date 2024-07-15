@@ -6,6 +6,7 @@ namespace TwoPointers.ThreeSum
 {
     public static class ThreeSumProblem
     {
+        /// RECOMMENDED
         public static IList<IList<int>> ThreeSum(int[] nums)
         {
             ReadOnlySpan<int> span = nums.OrderBy(x => x).ToArray().AsSpan();
@@ -29,7 +30,7 @@ namespace TwoPointers.ThreeSum
                         left++;
                     else
                     {
-                        res.Add(new List<int> { span[i], span[left], span[right] });
+                        res.Add([span[i], span[left], span[right]]);
 
                         left++;
 
