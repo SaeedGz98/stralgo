@@ -14,23 +14,21 @@
                 if (nums[middle] == target)
                     return middle;
 
-                //left sorted
+                // Check if the left half is sorted
                 if (nums[left] <= nums[middle])
                 {
-                    //search left
+                    // Target is in the left half
                     if (target >= nums[left] && target <= nums[middle])
                         right = middle - 1;
-                    //search right
                     else
                         left = middle + 1;
                 }
-                //right sorted
+                // Right half must be sorted
                 else
                 {
-                    //search right
+                    // Target is in the right half
                     if (target >= nums[middle] && target <= nums[right])
                         left = middle + 1;
-                    //search left
                     else
                         right = middle - 1;
                 }
