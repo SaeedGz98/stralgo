@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace TwoPointers.ValidPalindrome
+﻿namespace TwoPointers.ValidPalindrome
 {
+    /// RECOMMENDED
     public static class ValidPalindromeProblem
     {
         public static bool IsPalindrome(string s)
