@@ -1,4 +1,5 @@
 ﻿using Arrays_Hashing.ContainsDuplicate;
+using Arrays_Hashing.GroupAnagrams;
 using Arrays_Hashing.ProductExceptSelf;
 using Arrays_Hashing.RansomNote;
 using Arrays_Hashing.TwoSum;
@@ -10,5 +11,6 @@ bool result3 = ContainsDuplicateProblem.ContainsDuplicate([1, 2, 3, 1]);
 bool result4 = ValidAnagramProblem.IsAnagram("anagram", "nagaram");
 bool result5 = ValidAnagramProblem.IsAnagram2("rat", "car");
 bool result6 = RansomNoteProblem.CanConstruct("aa", "aba");
+IList<IList<string>> result7 = GroupAnagramsProblem.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
 
 Console.ReadLine();
