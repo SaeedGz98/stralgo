@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace SlidingWindow.LongestSubstringWithoutRepeatingCharacters
 {
+    /// RECOMMENDED
     public static class LongestSubstringWithoutRepeatingCharactersProblem
     {
         public static int LengthOfLongestSubstring(string s)
         {
-            HashSet<char> set = new();
+            HashSet<char> set = [];
             int left = 0;
             int maxSize = 0;
 
