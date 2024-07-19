@@ -1,20 +1,22 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace Backtracking.Subsets
 {
+    /// <summary>
+    /// RECOMMENDED
+    /// </summary>
     public static class SubsetsProblem
     {
         public static IList<IList<int>> Subsets(int[] nums)
         {
-            List<List<int>> res = new();
-            Stack<int> subset = new();
+            List<List<int>> res = [];
+            Stack<int> subset = [];
 
             void DFS(int i)
             {
                 if (i >= nums.Length)
                 {
-                    res.Add(subset.ToList());
+                    res.Add([.. subset]);
                     return;
                 }
 
@@ -27,7 +29,7 @@ namespace Backtracking.Subsets
 
             DFS(0);
 
-            return res.ToArray();
+            return [.. res];
         }
     }
 }
