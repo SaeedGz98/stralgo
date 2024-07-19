@@ -1,5 +1,5 @@
-﻿using Backtracking.NQueens;
+﻿using Backtracking.Combinations;
+using Backtracking.NQueens;
 
-var result = NQueensProblem.SolveNQueens(4);
-
+var result = CombinationsProblem.Combine(4,2);
 var a = 2;
