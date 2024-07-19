@@ -1,11 +1,12 @@
 ﻿namespace Stack.GenerateParentheses
 {
+    /// RECOMMENDED
     public static class GenerateParenthesesProblem
     {
         public static IList<string> GenerateParenthesis(int n)
         {
-            Stack<char> stack = new();
-            List<string> result = new();
+            Stack<char> stack = [];
+            List<string> result = [];
 
             void Backtrack(int openN, int closedN)
             {
