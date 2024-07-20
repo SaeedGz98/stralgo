@@ -2,11 +2,12 @@
 
 namespace Backtracking.LetterCombinationsOfAPhoneNumber
 {
+    /// RECOMMENDED
     public static class LetterCombinationsOfAPhoneNumberProblem
     {
         public static IList<string> LetterCombinations(string digits)
         {
-            List<string> res = new();
+            List<string> res = [];
             Dictionary<char, string> digitsToChar = new()
             {
                 { '2',  "abc" },
