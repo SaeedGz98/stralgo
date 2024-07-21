@@ -10,9 +10,8 @@ namespace Backtracking.Subsets
         public static IList<IList<int>> Subsets(int[] nums)
         {
             List<List<int>> res = [];
-            Stack<int> subset = [];
 
-            void DFS(int i)
+            void DFS(int i, Stack<int> subset)
             {
                 if (i >= nums.Length)
                 {
@@ -21,13 +20,13 @@ namespace Backtracking.Subsets
                 }
 
                 subset.Push(nums[i]);
-                DFS(i + 1);
+                DFS(i + 1, subset);
 
                 subset.Pop();
-                DFS(i + 1);
+                DFS(i + 1, subset);
             }
 
-            DFS(0);
+            DFS(0, []);
 
             return [.. res];
         }

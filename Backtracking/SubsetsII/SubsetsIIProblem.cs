@@ -3,18 +3,19 @@ using System.Linq;
 
 namespace Backtracking.SubsetsII
 {
+    /// RECOMMENDED
     public static class SubsetsIIProblem
     {
         public static IList<IList<int>> SubsetsWithDup(int[] nums)
         {
-            List<List<int>> res = new();
-            nums = nums.OrderBy(x => x).ToArray();
+            List<List<int>> res = [];
+            nums = [.. nums.OrderBy(x => x)];
 
             void BackTrack(int i, Stack<int> subset)
             {
                 if (i == nums.Length)
                 {
-                    res.Add(subset.ToList());
+                    res.Add([.. subset]);
                     return;
                 }
 
@@ -32,7 +33,7 @@ namespace Backtracking.SubsetsII
 
             BackTrack(0, new());
 
-            return res.ToArray();
+            return [.. res];
         }
     }
 }
