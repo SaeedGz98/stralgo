@@ -1,5 +1,6 @@
 ﻿namespace Arrays_Hashing.ValidSudoku
 {
+    /// RECOMMENDED
     public static class ValidSudokuProblem
     {
         public static bool IsValidSudoku(char[][] board)
