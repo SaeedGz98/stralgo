@@ -1,5 +1,6 @@
 ﻿namespace Math_Geometry.RotateImage
 {
+    /// RECOMMENDED
     public static class RotateImageProblem
     {
         public static void Rotate(int[][] matrix)
@@ -27,8 +28,6 @@
 
                     // put the saved top left value to the top right position
                     matrix[top + i][right] = topLeft;
-
-
                 }
 
                 left++;
