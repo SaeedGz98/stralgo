@@ -1,13 +1,12 @@
-﻿using LinkedList.LinkedListCycle;
+﻿using LinkedList.ReverseLinkedList;
+using System;
 
-ListNode node1 = new(3);
-ListNode node2 = new(2);
-ListNode node3 = new(0);
-ListNode node4 = new(-4);
+ListNode listNode = new(1);
+listNode.next = new(2);
+listNode.next.next = new(3);
+listNode.next.next.next = new(4);
+listNode.next.next.next.next = new(5);
 
-node1.next = node2;
-node2.next = node3;
-node3.next = node4;
-node4.next = node2;
+ListNode result = ReverseLinkedListProblem.ReverseList(listNode);
 
-LinkedListCycleProblem.HasCycle(node1);
+Console.WriteLine("|| LINKED LIST ||");

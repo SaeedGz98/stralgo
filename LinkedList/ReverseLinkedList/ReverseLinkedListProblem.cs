@@ -1,5 +1,6 @@
 ﻿namespace LinkedList.ReverseLinkedList
 {
+    /// RECOMMENDED
     public static class ReverseLinkedListProblem
     {
         public static ListNode ReverseList(ListNode head)
@@ -15,7 +16,6 @@
             //}
 
             //return prev;
-
 
             if (head == null)
                 return null;
