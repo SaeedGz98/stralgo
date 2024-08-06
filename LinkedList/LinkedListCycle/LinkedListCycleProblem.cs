@@ -2,6 +2,7 @@
 
 namespace LinkedList.LinkedListCycle
 {
+    /// RECOMMENDED
     public static class LinkedListCycleProblem
     {
         public static bool HasCycle(ListNode head)
