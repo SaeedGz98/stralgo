@@ -1,32 +1,37 @@
 ﻿namespace Stack.ValidParentheses
 {
-    public static class ValidParenthesesProblem
+    public class ValidParenthesesProblem
     {
-        public static bool IsValid(string s)
+        public bool IsValid(string s)
         {
-            Stack<char> chars = new();
-            Dictionary<char, char> closeToOpen = new() {
-                { ')','(' },
-                { ']','[' },
-                { '}','{' }
+            Dictionary<char, char> openToClose = new()
+            {
+                { '(', ')' },
+                { '{', '}' },
+                { '[', ']' }
             };
 
-            foreach (var character in s)
+            Stack<char> opens = new();
+
+            foreach (char current in s)
             {
-                if (closeToOpen.ContainsKey(character))
+                if (openToClose.ContainsKey(current))
                 {
-                    if (chars.Any() && chars.Peek() == closeToOpen[character])
-                        chars.Pop();
-                    else
-                        return false;
+                    opens.Push(current);
                 }
                 else
                 {
-                    chars.Push(character);
+                    if (opens.Count == 0)
+                        return false;
+
+                    char lastOpen = opens.Pop();
+
+                    if (openToClose[lastOpen] != current)
+                        return false;
                 }
             }
 
-            return !chars.Any();
+            return opens.Count == 0;
         }
     }
 }
