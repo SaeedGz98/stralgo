@@ -1,6 +1,5 @@
 ﻿namespace Arrays_Hashing.TwoSum
 {
-    /// RECOMMENDED
     public static class TwoSumProblem
     {
         public static int[] TwoSum(int[] nums, int target)
