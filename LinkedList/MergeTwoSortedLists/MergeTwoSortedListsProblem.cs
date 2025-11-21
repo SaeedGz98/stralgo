@@ -4,8 +4,8 @@
     {
         public static ListNode MergeTwoLists(ListNode list1, ListNode list2)
         {
-            ListNode res = new();
-            ListNode tail = res;
+            ListNode dummyHead = new();
+            ListNode tail = dummyHead;
 
             while (list1 != null && list2 != null)
             {
@@ -31,7 +31,7 @@
                 tail.next = list2;
             }
 
-            return res.next;
+            return dummyHead.next;
         }
     }
 }
