@@ -2,7 +2,6 @@
 
 namespace SlidingWindow.BestTimeToBuyAndSellStock
 {
-    /// RECOMMENDED
     public static class BestTimeToBuyAndSellStockProblem
     {
         public static int MaxProfit(int[] prices)

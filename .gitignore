@@ -729,3 +729,4 @@ obj/
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,aspnetcore,dotnetcore,csharp
 
 global.json
+.DS_Store
