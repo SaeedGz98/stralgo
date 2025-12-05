@@ -2,10 +2,10 @@
 
 namespace LinkedList.LinkedListCycle
 {
-    /// RECOMMENDED
-    public static class LinkedListCycleProblem
+    public class LinkedListCycleProblem
     {
-        public static bool HasCycle(ListNode head)
+        // Approach 1: HashSet tracking - O(n) space
+        public bool HasCycle(ListNode head)
         {
             HashSet<ListNode> visited = new();
             bool hasCycle = false;
@@ -17,6 +17,39 @@ namespace LinkedList.LinkedListCycle
             }
 
             return hasCycle;
+        }
+
+        // Approach 2: Floyd's Cycle Detection (Fast & Slow Pointers) - O(1) space
+        public bool HasCycle2(ListNode head)
+        {
+            if (head == null)
+                return false;
+
+            ListNode slow = head;
+            ListNode fast = head;
+
+            while (fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+
+                if (slow == fast)
+                    return true;
+            }
+
+            return false;
+        }
+    }
+
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x)
+        {
+            val = x;
+            next = null;
         }
     }
 }
