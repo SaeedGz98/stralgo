@@ -1,6 +1,5 @@
 ﻿namespace Arrays_Hashing.RansomNote
 {
-    /// RECOMMENDED
     public static class RansomNoteProblem
     {
         public static bool CanConstruct(string ransomNote, string magazine)
