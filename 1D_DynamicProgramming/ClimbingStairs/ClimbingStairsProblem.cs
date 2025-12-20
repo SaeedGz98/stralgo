@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace _1D_DynamicProgramming.ClimbingStairs
+﻿namespace _1D_DynamicProgramming.ClimbingStairs
 {
     public static class ClimbingStairsProblem
     {
@@ -8,7 +6,7 @@ namespace _1D_DynamicProgramming.ClimbingStairs
         {
             int one = 1, two = 1;
 
-            foreach (var item in Enumerable.Range(0, n - 1))
+            for (int i = 0; i < n - 1; i++)
                 (one, two) = (one + two, one);
 
             return one;
