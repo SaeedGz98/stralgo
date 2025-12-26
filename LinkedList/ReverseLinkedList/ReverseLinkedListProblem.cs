@@ -1,36 +1,22 @@
 ﻿namespace LinkedList.ReverseLinkedList
 {
-    /// RECOMMENDED
     public static class ReverseLinkedListProblem
     {
         public static ListNode ReverseList(ListNode head)
         {
-            //ListNode prev = null, curr = head;
+            ListNode reversedHead = null;
+            ListNode current = head;
 
-            //while (curr != null)
-            //{
-            //    ListNode nxt = curr.next;
-            //    curr.next = prev;
-            //    prev = curr;
-            //    curr = nxt;
-            //}
-
-            //return prev;
-
-            if (head == null)
-                return null;
-
-            ListNode newHead = head;
-
-            if (head.next != null)
+            while (current != null)
             {
-                newHead = ReverseList(head.next);
-                head.next.next = head;
+                ListNode nextNode = current.next;
+
+                current.next = reversedHead;
+                reversedHead = current;
+                current = nextNode;
             }
 
-            head.next = null;
-
-            return newHead;
+            return reversedHead;
         }
     }
 }
